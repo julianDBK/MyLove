@@ -1,0 +1,398 @@
+::-webkit-scrollbar{
+    width: 12px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 2px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(133, 26, 232);
+    background: linear-gradient(180deg, rgba(133,26,232,1) 15%,
+    rgba(42,0,255,1) 84%);
+    border-radius: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans';
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #a922bb;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #a423a4;  
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 26%, 0.693), hsla(288, 67%, 34%, 0.545)), url(images/principal.png);  
+    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.693), hsla(288, 67%, 34%, 0.545)), url(images/principal.png);
+
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+
+}
+
+nav > a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-cabeza{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-cabeza h1{
+    font-size: 100px;
+    color: #fff;
+}
+
+.textos-cabeza h2{
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*-----------------------------------------------------*/
+.cont-historia{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-nosotros{
+    width: 20%;
+    
+    border-radius: 40px;
+    background: #a423a4;
+    background: linear-gradient(
+        90deg,
+        #a423a4 0%,
+        #ec0ba5 50%,
+        #330589 100%
+
+    );
+
+    padding: 8px;
+    display: inline-flex;
+    
+}
+
+.cont-historia .texto-historia{
+    width: 48%;  
+}
+
+
+.texto-historia p{
+    padding: 0px 0px 30px 15px;
+    font-family: 'Open sans';
+    font-weight:600;
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 20%;
+    margin-right: 40PX;
+}
+
+.fotos{
+    background: #f2f2f2;
+    
+}
+
+.galeria-fotitos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.fotito{
+    width: 150px;
+    margin-bottom: 10px;
+    border-radius: 13px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.fotito > img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.hover-fotitos{
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background-color: hsla(275, 81%, 58%, 0.776);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-fotitos img{
+    width: 80px;
+}
+.hover-fotitos p{
+    font-family: 'Open sans';
+    font-weight: 510;
+    font-style: italic;
+    color: rgb(9, 9, 9);
+}
+
+.fotito:hover .hover-fotitos{
+    transform: scale(1);
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #531589;
+    display: flex;
+    width: 70%;
+    height: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.cards .card video{
+    border-radius: 5px;
+    width: 150px;
+    height: 230px;
+    object-fit: cover;
+    
+    display: block;
+}
+
+.cards .card .texto-card{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .texto-card p{
+    font-weight: 200;
+    padding-top: 10px;
+    font-family: Calibri;
+}
+
+footer{
+    background: #5c3178;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #0f1626;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+    text-align: center;
+    font-family: Poppins;
+    padding: 8px;
+    justify-content: space-evenly;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media screen and (max-width:900px) {
+    header{
+        background-position: center;
+    }
+
+    .cont-historia{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont-historia .texto-historia{
+        width: 90%;
+    }
+
+    .imagen-nosotros{
+        width: 90%;
+    }
+
+    /*Galeria*/
+    .fotito{
+        width: 44%;
+    }
+
+    /* JAS */
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 300px;
+        height: 550px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .cards .card > video{
+        width: 150px;
+        height: 220px;
+        margin: 10px;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 40px;    
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-cabeza h1{
+        font-size: 35px;
+    }
+
+    .textos-cabeza h2{
+        font-size: 20px;
+    }
+
+    .imagen-nosotros{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .cont-historia .texto-historia{
+        width: 95%;
+    }
+
+    /*Galeria*/
+    .fotito{
+        width: 45%;
+
+    }
+
+    .cards .card{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card video{
+        width: 150px;
+        height: 200px;
+    }
+
+    .contenedor-footer{
+        flex-direction: column;
+
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .Titulo-final{
+        font-size: 20px;
+    }
+}

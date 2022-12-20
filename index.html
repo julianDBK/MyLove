@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/corazon icon.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos.css">
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <title>ADMV</title>
+</head>
+
+<body>
+    <header id="inicio">
+        <nav>
+            <a href="#">inicio</a>
+            <a href="#historia">historia</a>
+            <a href="#fotos">fotitos</a>
+            <a href="#final">Gracias</a>
+        </nav>
+        <section class="textos-cabeza">
+            <h1>Nosotros</h1>
+            <h2>Un pequeño resumen de nuestra historia</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+
+    <main>
+        <section class="contenedor historia" id="historia">
+            <h2 class="titulo" data-aos="zoom-in">Nuestra historia</h2>
+            <div class="cont-historia">
+
+                <div class="texto-historia">
+
+                    <p data-aos="fade-right">Todo empezo sin haberlo planeado, desde el asiento de un bus pude darme 
+                        cuenta, con solo verte, de que eras lo que queria, y aunque no pense lograrlo al final pude
+                        y me alegro mucho de eso porque desde esa primer mirada han pasado mas de 3 años.
+                    </p>
+                </div>
+
+                <img data-aos="fade-up-right" id="img1" src="images/historia.jpeg" alt="" class="imagen-nosotros">
+
+
+            </div>
+        </section>
+        <section class="portafolio" id="fotos">
+            <div class="contenedor">
+                <h2 class="titulo" data-aos="zoom-in-right">Fotitos</h2>
+                <div class="galeria-fotitos">
+                    <div class="fotito">
+                        <img src="images/foto1.jpeg" alt="" data-aos="zoom-out-down">
+                        <div class="hover-fotitos">
+                            <img src="images/corazon.png" alt="">
+                            <p>Te amo</p>
+                        </div>
+                    </div>
+                    <div class="fotito">
+                        <img src="images/foto2.jpg" alt=""  data-aos="zoom-out-down">
+                        <div class="hover-fotitos">
+                            <img src="images/corazon.png" alt="">
+                            <p>Mucho</p>
+                        </div>
+                    </div>
+                    <div class="fotito">
+                        <img src="images/foto3.jpg" alt="" data-aos="zoom-out-down">
+                        <div class="hover-fotitos">
+                            <img src="images/corazon.png" alt="">
+                            <p>Mi niña</p>
+                        </div>
+                    </div>
+                    <div class="fotito">
+                        <img src="images/foto4.jpg" alt="" data-aos="zoom-out-down">
+                        <div class="hover-fotitos">
+                            <img src="images/corazon.png" alt="">
+                            <p>Hermosa</p>
+                        </div>
+                    </div>
+                    <div class="fotito">
+                        <img src="images/foto5.jpg" alt="" data-aos="zoom-out-down">
+                        <div class="hover-fotitos">
+                            <img src="images/corazon.png" alt="">
+                            <p>Y piciosa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="teamo contenedor" id="final">
+            <h2 class="titulo" data-aos="fade-down-left">Gracias por tanto</h2>
+            <div class="cards">
+                <div class="card" data-aos="fade-up-right">
+                    <video controls>
+                        <source src="images/video1.mp4" type="video/mp4">
+                    </video>
+                    <div class="texto-card">
+                        <h4>My love</h4>
+                        <p>Se que aunque lo nuestro no a sido facil hemos podido sacarlo adelante
+                            y aguantarnos el uno al otro, asi que por eso quiero agradecerte. Gracias
+                            por hacer de cada momento algo especial e inolvidable porque si tu estas conmigo
+                            no me hace falta nada mas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Un pequeño detalle para ti &hearts;</h4>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Julian Ordoñez | Julian Design</h2>
+
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+</body>
+
+</html>
